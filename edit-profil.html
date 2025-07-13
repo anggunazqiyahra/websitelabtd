@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil User - Lab Teknik Digital</title>
+  <link rel="stylesheet" href="css/edit-profile.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+   <!--Navbar start-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./image/logo td.png" alt="Logo Lab">
+            Lab Teknik Digital
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pra-praktikum.html">Pra Praktikum</a></li>
+            <li class="dropdown">
+                <a href="#">Praktikum ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="prak-td.html">Teknik Digital</a></li>
+                    <li><a href="prak-embedded.html">Embedded System</a></li>
+                    <li><a href="prak-eldig.html">Elektronika Digital</a></li>
+                </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="edit-profil.html">Profile</a></li>
+            <li><a href="login.html">Masuk</a></li>
+          
+        </ul>
+    </nav>
+    <!--Navbar end-->
+
+  <div class="container">
+    <h1 class="page-title">Profil User</h1>
+    
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-avatar" id="avatarDisplay">
+          U
+        </div>
+        <h2>Informasi Pengguna</h2>
+        <p>Kelola informasi profil Anda</p>
+      </div>
+
+      <form id="userForm">
+        <div class="form-group">
+          <label for="npm">NPM</label>
+          <input type="text" id="npm" name="npm" maxlength="20" placeholder="Masukkan NPM Anda" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" maxlength="20" placeholder="Username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-field">
+              <input type="password" id="password" name="password" maxlength="255" placeholder="Password" required>
+              <button type="button" class="password-toggle" onclick="togglePassword()">
+                <span id="password-icon">👁️</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nama_lengkap">Nama Lengkap</label>
+          <input type="text" id="nama_lengkap" name="nama_lengkap" maxlength="40" placeholder="Nama lengkap Anda" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" maxlength="40" placeholder="email@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="kelompok">
+              Kelompok 
+              <span class="info-badge">Read Only</span>
+            </label>
+            <div class="disabled-field">
+              <input type="text" id="kelompok" name="kelompok" value="Kelompok A" disabled>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="praktikum">
+              Praktikum 
+              <span class="info-badge">Read Only</span>
+            </label>
+            <div class="disabled-field">
+              <input type="text" id="praktikum" name="praktikum" value="Teknik Digital" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="foto_profil">Foto Profil</label>
+          <input type="file" id="foto_profil" name="foto_profil" accept="image/*">
+          <small style="color: #6c757d; margin-top: 0.5rem; display: block;">Maksimal ukuran file 2MB (JPG, PNG, GIF)</small>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn">Simpan Profil</button>
+          <button type="button" class="btn btn-secondary" onclick="resetForm()">Batal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Alamat</h4>
+        <p>Lab Teknik Digital<br>Universitas Lampung<br>Jl. Prof. Dr. Ir. Sumantri Brojonegoro No.1, Gedong Meneng, Kec. Rajabasa, Kota Bandar Lampung</p>
+      </div>
+ 
+      <div class="footer-section">
+        <h4>Lokasi (Maps)</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1547924363897!2d105.24064731476293!3d-5.358493996082309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40da3b8c3e2dc1%3A0x861bc80cca2ee8c9!2sUniversitas%20Lampung!5e0!3m2!1sid!2sid!4v1638360583891!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+ 
+      <div class="footer-section">
+        <h4>Instagram</h4>
+        <p>
+          Ikuti kami di Instagram: <br>
+          <a href="https://www.instagram.com/lab_td/?igsh=N2VwaWthOHp2cjB0#" target="_blank">@lab_td</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/edit-profile.js"></script>
+</body>
+</html>

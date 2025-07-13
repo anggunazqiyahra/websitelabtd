@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/prak-td.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Lab Teknik Digital - Embedded System</title>
+</head>
+<body>
+
+<!--Navbar start-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./image/logo td.png" alt="Logo Lab">
+            Lab Teknik Digital
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pra-praktikum.html">Pra Praktikum</a></li>
+            <li class="dropdown">
+                <a href="#">Praktikum ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="prak-td.html">Teknik Digital</a></li>
+                    <li><a href="prak-embedded.html">Embedded System</a></li>
+                    <li><a href="prak-eldig.html">Elektronika Digital</a></li>
+                </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="edit-profil.html">Profile</a></li>
+            <li><a href="login.html">Masuk</a></li>
+          
+        </ul>
+    </nav>
+    <!--Navbar end-->
+
+<div class="main-content">
+  <h1 class="section-title">PRAKTIKUM ELEKTRONIKA DIGITAL (PELDIG)</h1>
+  
+  <div class="praktikum-grid">
+    <div class="praktikum-card available" onclick="openModal('pengenalanMikro')">
+      <div class="card-icon">
+        <i class="fas fa-microchip"></i>
+      </div>
+      <h3 class="card-title">PENGENALAN SISTEM BENAM BERBASIS PENGENDALI MIKRO 8-BIT</h3>
+      <span class="card-status status-available">Tersedia</span>
+    </div>
+
+    <div class="praktikum-card locked">
+      <div class="card-icon">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3 class="card-title">ANTARMUKA I/O ANALOG & DIGITAL</h3>
+      <span class="card-status status-locked">Buka: 8/6/2025, 00.00.00</span>
+    </div>
+
+    <div class="praktikum-card locked">
+      <div class="card-icon">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3 class="card-title">KOMUNIKASI SERIAL UART, SERIAL SINKRON-I2C, DAN SERIAL SINKRON-SPI</h3>
+      <span class="card-status status-locked">Buka: 15/6/2025, 00.00.00</span>
+    </div>
+
+    <div class="praktikum-card locked">
+      <div class="card-icon">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3 class="card-title">PENGENALAN SISTEM TEBENAM BERBASIS INTERNET</h3>
+      <span class="card-status status-locked">Buka: 22/6/2025, 00.00.00</span>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Pengenalan Mikro -->
+<div id="pengenalanMikroModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Pengenalan Sistem Benam Berbasis Pengendali Mikro 8-Bit</h2>
+      <span class="close" onclick="closeModal('pengenalanMikro')">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="section">
+        <div class="section-subtitle">Modul</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Modul_Praktikum_Embedded_System_2025.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Modul_Praktikum_Embedded_System_2025.pdf" download>
+            <i class="fas fa-download"></i> Unduh Modul
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-subtitle">Tugas Pendahuluan</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Tugas_Pendahuluan_Pengenalan_Mikro_8bit.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Tugas_Pendahuluan_Pengenalan_Mikro_8bit.pdf" download>
+            <i class="fas fa-download"></i> Unduh Tugas Pendahuluan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Antarmuka I/O -->
+<div id="antarmukaIOModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Antarmuka I/O Analog & Digital</h2>
+      <span class="close" onclick="closeModal('antarmukaIO')">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="section">
+        <div class="section-subtitle">Modul</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Modul_Antarmuka_IO_Analog_Digital.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Modul_Antarmuka_IO_Analog_Digital.pdf" download>
+            <i class="fas fa-download"></i> Unduh Modul
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-subtitle">Tugas Pendahuluan</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Tugas_Pendahuluan_Antarmuka_IO.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Tugas_Pendahuluan_Antarmuka_IO.pdf" download>
+            <i class="fas fa-download"></i> Unduh Tugas Pendahuluan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Komunikasi Serial -->
+<div id="komunikasiSerialModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Komunikasi Serial UART, I2C, dan SPI</h2>
+      <span class="close" onclick="closeModal('komunikasiSerial')">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="section">
+        <div class="section-subtitle">Modul</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Modul_Komunikasi_Serial_UART_I2C_SPI.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Modul_Komunikasi_Serial_UART_I2C_SPI.pdf" download>
+            <i class="fas fa-download"></i> Unduh Modul
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-subtitle">Tugas Pendahuluan</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Tugas_Pendahuluan_Komunikasi_Serial.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Tugas_Pendahuluan_Komunikasi_Serial.pdf" download>
+            <i class="fas fa-download"></i> Unduh Tugas Pendahuluan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for IoT -->
+<div id="iotModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Pengenalan Sistem Tebenam Berbasis Internet</h2>
+      <span class="close" onclick="closeModal('iot')">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="section">
+        <div class="section-subtitle">Modul</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Modul_Sistem_Tebenam_IoT.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Modul_Sistem_Tebenam_IoT.pdf" download>
+            <i class="fas fa-download"></i> Unduh Modul
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-subtitle">Tugas Pendahuluan</div>
+        <div class="pdf-container">
+          <iframe src="pdf/Tugas_Pendahuluan_Sistem_IoT.pdf#toolbar=1"></iframe>
+        </div>
+        <div class="download-link">
+          <a href="pdf/Tugas_Pendahuluan_Sistem_IoT.pdf" download>
+            <i class="fas fa-download"></i> Unduh Tugas Pendahuluan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Alamat</h4>
+        <p>Lab Teknik Digital<br>Universitas Lampung<br>Jl. Contoh No. 123, Kota ABC</p>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Lokasi (Maps)</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9028025320953!2d-122.08424968469157!3d37.42199977982569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0bce49b1255%3A0xb4c67bd8b2536a22!2sGoogleplex!5e0!3m2!1sen!2sus!4v1617153776826!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Instagram</h4>
+        <p>
+          Ikuti kami di Instagram: <br>
+          <a href="https://www.instagram.com/lab_td/?igsh=N2VwaWthOHp2cjB0#" target="_blank">@lab_td</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/prak-td.js"></script>
+
+</body>
+</html>
